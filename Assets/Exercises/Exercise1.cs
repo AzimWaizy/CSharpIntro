@@ -1,4 +1,7 @@
 ﻿using System;
+
+using UnityEditor.Scripting;
+
 using UnityEngine;
 
 /// <summary>
@@ -16,6 +19,8 @@ public static class Exercise1
     {
         
         // TODO Debug.Log() the sum of both values.
+        int sum = a + b;
+        Debug.Log(sum);
         
     }
 
@@ -30,6 +35,8 @@ public static class Exercise1
     {
         
         // TODO Debug.Log() the dog years.
+        int dogYears = realYears * 7;
+        Debug.Log(dogYears);
         
     }
     
@@ -53,6 +60,9 @@ public static class Exercise1
     {
         
         // TODO Debug.Log() the new price with the discount applied.
+        float pricePercentage = 1 - discount;
+        float newPrice = price * pricePercentage;
+        Debug.Log(newPrice);
         
     }
 
@@ -72,6 +82,9 @@ public static class Exercise1
     {
         
         // TODO Debug.Log() the amount of cake everyone gets.
+        int people = friends + 1;
+        float piece = grams / people;
+        Debug.Log(piece);
         
     }
 
@@ -91,6 +104,8 @@ public static class Exercise1
     {
         
         // TODO Debug.Log() the new price with the coupon applied.
+        float newPrice = Mathf.Max(0, price - couponValue);
+        Debug.Log(newPrice);
         
     }
 
@@ -113,6 +128,9 @@ public static class Exercise1
     {
         
         // TODO Debug.Log() the new health.
+        int unclampedHealth = currentHealth + changeInHealth;
+        int newHealth = Math.Clamp(unclampedHealth, 0, 100);
+        Debug.Log(newHealth);
         
     }
 
@@ -154,6 +172,8 @@ public static class Exercise1
     {
         
         // TODO Debug.Log() the amount of leftover books.
+        int leftoverBooks = books % 8;
+        Debug.Log(leftoverBooks);
         
     }
 }
